@@ -11,7 +11,7 @@ const client = net.createConnection(config);
 
 // set the encoding
 
-client.setEncoding("utf-8");
+client.setEncoding("utf8");
 
 // handle incoming data
 
@@ -22,6 +22,6 @@ client.on("data", (data) => {
 // listen for keyboard input and send that to server
 
 process.stdin.on("data", (key) => {
-  const message = String(key).trim();
-  client.write(message);
+  const data = String(key).trim();
+  client.write(data);
 });

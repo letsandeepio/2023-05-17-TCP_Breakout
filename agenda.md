@@ -19,3 +19,8 @@ Questions?
 
 - Practical Demo #1 - Simple 'echo' server
 - Practical Demo #2 - An Information Retrieval System
+
+1. We have data about SpaceX Rockets
+2. Whenever a client connects to the server, server is going to send them numbered list of rockets
+3. Client will chose a number from the list
+4. Server will respond back with the description to the rocket
